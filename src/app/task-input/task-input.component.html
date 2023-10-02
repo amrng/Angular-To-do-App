@@ -1,0 +1,5 @@
+<div class="inp d-flex justify-content-evenly align-items-center mb-5">
+  <input type="text" class="rounded-3 w-50 ps-3 placeholder-wave" placeholder="Enter a new task" style="height: 40px;"
+    [(ngModel)]="newTask" (keyup.Enter)="addTask(newTask)">
+  <button class="btn btn-warning w-25 fw-bold" (click)="addTask(newTask)">Add Task</button>
+</div>

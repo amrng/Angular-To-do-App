@@ -1,0 +1,10 @@
+<div class="out d-flex align-items-center justify-content-center w-100" *ngFor="let task of tasks">
+  <div class="d-flex align-items-center justify-content-between w-75 p-2 border-bottom border-warning-subtle">
+    <p class="pt-3 fw-medium fs-5" [ngStyle]="{'text-decoration': task.completed ? 'line-through' : 'none' }">
+      {{task.text}}</p>
+    <div class="btns">
+      <button class="btn btn-outline-success me-4" (click)="completedTask(task)">Completed</button>
+      <button class="btn btn-outline-danger" (click)="deletedTask(task)">Delete</button>
+    </div>
+  </div>
+</div>

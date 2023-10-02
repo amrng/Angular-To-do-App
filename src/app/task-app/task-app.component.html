@@ -1,0 +1,6 @@
+<div class="whole p-5">
+  <h2 class="text-center mb-5 mt-2">To-Do tasks</h2>
+
+  <app-task-input (task)="addTask($event)"></app-task-input>
+  <app-task-output [tasks]="tasks" (deleted)="deleted($event)" (completed)="completed($event)"></app-task-output>
+</div>
